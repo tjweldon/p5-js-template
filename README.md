@@ -1,7 +1,14 @@
 # P5 Project Template
 This is a project template to act as a starting point for any future p5 projects. It's designed to be lightweight so as to not overcomplicate things for a beginner. This means no npm and no webpack! However in the interests of usability it will install nvm and node version 16.*, along with browser-sync.
 
-## Installation
+## Setup
+
+### Pre-requisites
+This repository assumes you have a bash (or similar) shell, powershell or windows `cmd:>` command line interfaces are not supported.
+Git is also required!
+
+### Installation
+
 Clone the repository using `git clone`. In your terminal use the following commands to install the relevant dependencies:
 ```bash
 $ cd p5-js-template
@@ -20,6 +27,8 @@ Now using node v16.13.0 (npm v8.1.0)
 If this doesn't give the expected result, consult the [nvm documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for instructions on how to install nvm for your platform. Once it's installed successfully you can re-run `./bin/install.sh`.
 
 ## Usage
+
+### Running your code
 To view your project in the browser, in the terminal, from the project root run the following command. The expected output is shown below. 
 ```bash
 $ ./bin/start.sh
@@ -40,5 +49,5 @@ The start command will automatically refresh the browser page when you change yo
 
 To stop running your project simply press `ctrl-C` on the terminal where it's running and the local server will terminate.
 
-## Extending the template
+### Extending the template
 The file that controls what p5 renders on the canvas is `./main.js`. The draw & setup functions playing the role of `draw` and `setup` from the [p5 documentation](https://p5js.org/). The functions in the `p5` library can be accessed as properties of the `s` object in `./main.js`.
