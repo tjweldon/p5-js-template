@@ -1,5 +1,5 @@
 # P5 Project Template
-This is a project template to act as a starting point for any future p5 projects. It's designed to be lightweight so as to not overcomplicate things for a beginner. This means no npm and no webpack! However in the interests of usability it will install nvm and node version 16.*, along with browser-sync.
+This is a project template to act as a starting point for any future p5 projects. It's designed to be lightweight to simplify things for a beginner. This means no npm and no webpack! However, in the interests of usability it will install nvm and node version 16.*, along with browser-sync.
 
 ## Setup
 
@@ -10,10 +10,19 @@ Git is also required!
 ### Installation
 
 Clone the repository using `git clone`. In your terminal use the following commands to install the relevant dependencies:
+
+**If your shell is bash:**
 ```bash
 $ cd p5-js-template
-$ ./bin/install.sh
+$ source ./bin/install.sh
 ```
+
+**If yor shell is zsh:**
+```bash
+$ cd p5-js-template
+$ source ./bin/install.zsh
+```
+
 This should spit out a bunch of output from the installation process. To check that the installation was successful, you can execute the following command and see the output as below:
 ```bash
 $ node --version
@@ -24,14 +33,25 @@ If this doesn't work, try the following command (expected output included)
 $ nvm use 16
 Now using node v16.13.0 (npm v8.1.0)
 ```
-If this doesn't give the expected result, consult the [nvm documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for instructions on how to install nvm for your platform. Once it's installed successfully you can re-run `./bin/install.sh`.
+If this doesn't give the expected result, consult the [nvm documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for instructions on how to install nvm for your platform. Once it's installed successfully you can re-run `source ./bin/install.sh`.
 
 ## Usage
 
 ### Running your code
-To view your project in the browser, in the terminal, from the project root run the following command. The expected output is shown below. 
+To view your project in the browser, in the terminal, from the project root run the following command. The expected output is shown below.
+
+**If your shell is bash:**
 ```bash
-$ ./bin/start.sh
+$ source ./bin/start.sh
+```
+
+**If your shell is zsh:**
+```bash
+$ source ./bin/start.zsh
+```
+
+**Output:**
+```bash
 [Browsersync] Access URLs:
  --------------------------------------
        Local: http://localhost:3000
