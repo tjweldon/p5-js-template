@@ -115,10 +115,10 @@ const draw = (s) => () => {
     s.noStroke();
 
     let lil_circle = theta => circle_path(HEIGHT/8)(theta)
-    let last_pos = lil_circle(i).plus(center);
+    let last_pos = center;
     let positions = [];
     for (let j = 0; j < 10; j++) {
-        last_pos = last_pos.plus(lil_circle(i*(2*j+2)/3).scale(1/(j+1)));
+        last_pos = last_pos.plus(lil_circle(i*(2*j+2)/3).scale(1/(j+3)));
         positions.push(last_pos);
     }
 
